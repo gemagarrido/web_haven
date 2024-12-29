@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HAVEN</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="media/icons/favicon-32x32.png" />
+
+    <!-- librias -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+
+    <!-- scripts -->
+    <script src="script.js" async></script>
+
+    <!-- php -->
+  </head>
+  <body>
+    <main>
+      <div class="music-player">
+        <!-- prettier-ignore -->
+        <div class="music-player-2">
+              <div class="album-cover">
+                <img src="" id="rotatingImage" alt="" />
+                <span class="point"></span>
+              </div>
+              <div>
+                <h2></h2>
+                <p></p>
+              </div>
+        </div>
+
+        <audio id="song"></audio>
+
+        <input type="range" value="0" id="progress" />
+
+        <div class="controls">
+          <button class="backward">
+            <i class="fa-solid fa-backward"></i>
+          </button>
+          <button class="play-pause-btn">
+            <i class="fa-solid fa-play" id="controlIcon"></i>
+          </button>
+          <button class="forward">
+            <i class="fa-solid fa-forward"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

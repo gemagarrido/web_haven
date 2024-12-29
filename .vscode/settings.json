@@ -1,0 +1,157 @@
+{
+    // - (files)
+    // Controla si el editor debe auto guardar los archivos modificados.
+    "files.autoSave": "onFocusChange",
+    // Configura la codificación de caracteres predeterminada del editor.
+    "files.encoding": "utf8",
+    // Controla el retraso en ms después del cual un archivo se guarda automáticamente.
+    "files.autoSaveDelay": 3000,
+    // Controla si se deben eliminar los espacios en blanco al final de las líneas al guardar un archivo.
+    "files.trimTrailingWhitespace": true,
+    // Controla si se debe insertar una nueva línea al final del archivo al guardarlo.
+    "files.insertFinalNewline": true,
+    // Controla cuántas nuevas líneas finales se deben recortar al guardar un archivo.
+    "files.trimFinalNewlines": true,
+    // - (editor)
+    // Controla si el editor debe formatear el archivo cuando se guarda.
+    "editor.formatOnSave": false,
+    // Insertar espacios cuando se presiona Tab.
+    "editor.insertSpaces": true,
+    // Define el número de espacios que se insertan.
+    "editor.tabSize": 4,
+    // Detección automática de indentación.
+    "editor.detectIndentation": true,
+    // Resalta la línea actual.
+    "editor.renderLineHighlight": "line",
+    // Muestra números de línea en el editor.
+    "editor.lineNumbers": "on",
+    // Muestra espacios en blanco.
+    "editor.renderWhitespace": "selection",
+    // Configura el minimapa.
+    "editor.minimap.enabled": false,
+    // Controla si el editor debe mostrar códigos de color en línea.
+    "editor.colorDecorators": false,
+    // Establece el estilo del cursor en el editor.
+    "editor.cursorStyle": "line",
+    // Controla el estilo de parpadeo del cursor.
+    "editor.cursorBlinking": "expand",
+    // Habilita o deshabilita el desplazamiento suave.
+    "editor.smoothScrolling": true,
+    // Controla si el editor permite el desplazamiento más allá de la última línea.
+    "editor.scrollBeyondLastLine": false,
+    // Controla si el editor debe insertar automáticamente el par de corchetes de cierre.
+    "editor.autoClosingBrackets": "always",
+    // Controla si el editor debe insertar automáticamente el par de comillas de cierre.
+    "editor.autoClosingQuotes": "always",
+    // Controla si el editor debe envolver automáticamente las selecciones con comillas o corchetes.
+    "editor.autoSurround": "quotes",
+    // Habilita o deshabilita las ligaduras de fuente.
+    "editor.fontLigatures": false,
+    // Establece el tamaño de la fuente del editor.
+    "editor.fontSize": 10,
+    // Controla si las sugerencias rápidas deben aparecer mientras escribes.
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+    },
+    // Controla si las sugerencias deben ser aceptadas al presionar Enter.
+    "editor.acceptSuggestionOnEnter": "smart",
+    // Controla si las completaciones automáticas deben estar disponibles al presionar Tab.
+    "editor.tabCompletion": "on",
+    // Controla si las sugerencias de fragmentos de código (snippets) deben aparecer en las sugerencias.
+    "editor.snippetSuggestions": "top",
+    // Controla si las sugerencias de parámetros deben aparecer mientras escribes.
+    "editor.parameterHints.enabled": true,
+    // Prettier como formateador predeterminaod
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    // Eslint
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
+    // - (serialización)
+    // Configura la validación de archivos JSON.
+    "json.validate.enable": true,
+    // - (format code)
+    // Habilita el soporte de linting para varios lenguajes.
+    "eslint.enable": true,
+    "stylelint.enable": true,
+    // - (git)
+    // Habilita commits intelignetes en Git.
+    "git.enableSmartCommit": true,
+    // Habilita la actualización automática de la información del repositorio remoto.
+    "git.autofetch": true,
+    // Muestra el estado de Git en la barra de estado.
+    "git.decorations.enabled": true,
+    // Añade una capa de seguridad y autenticidad con una firma GPG.
+    "git.enableCommitSigning": true,
+    // Añade una capa de seguridad para evitar sobrescribir cambios accidentalmente.
+    "git.confirmForcePush": true,
+    // Proporciona información rápida sobre el estado del repositorio directamente en la interfaz del editor.
+    "git.enableStatusBarSync": true,
+    // Habilita la acción de abrir archivos desde la vista de cambios en línea
+    "git.showInlineOpenFileAction": true,
+    // - (terminal)
+    // Cambia el shell predeterminado a PowerShell (Windows) o bash (Linux/Mac).
+    "terminal.integrated.defaultProfile.osx": "bash",
+    "terminal.integrated.profiles.osx": {
+        "bash": {
+            "path": "/bin/bash",
+            "args": []
+        },
+        "zsh": {
+            "path": "/bin/zsh",
+            "args": []
+        }
+    },
+    // Controla el tamaño de la fuente del terminal.
+    "terminal.integrated.fontSize": 10,
+    // Habilita la copia automática al seleccionar texto en el terminal.
+    "terminal.integrated.copyOnSelection": true,
+    // - (explorer)
+    // Desplazamiento de Explorador de Archivos (File Explorer) en la barra lateral automáticamente el archivo editado actualmente.
+    "explorer.autoReveal": false,
+    // Esta configuración controla si los archivos se abren en modo de vista previa
+    "workbench.editor.enablePreview": true,
+    // Esta configuración controla si se deben mostrar las pestañas de los editores abiertos en la parte superior de la ventana del editor.
+    "workbench.editor.showTabs": "single",
+    // Controla si se muestra un cuadro de diálogo de confirmación al eliminar archivos.
+    "explorer.confirmDelete": true,
+    // Controla si las carpetas anidadas que contienen solo una carpeta se contraen en una sola carpeta en el explorador.
+    "explorer.compactFolders": false,
+    // Controla el orden de clasificación de los archivos y carpetas en el explorador.
+    "explorer.sortOrder": "default",
+    // Establece el número máximo de editores abiertos visibles en el Explorador de Archivos.
+    "explorer.openEditors.visible": 3,
+    // Controla si los colores de las decoraciones de archivos (como los cambios de Git) se muestran en el explorador.
+    "explorer.decorations.colors": true,
+    // Controla si las insignias de decoraciones de archivos (como los cambios de Git) se muestran en el explorador.
+    "explorer.decorations.badges": false,
+    "[shellscript]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[ignore]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "conventionalCommits.scopes": [
+        "component"
+    ],
+}

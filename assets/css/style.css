@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/*////////////////////////////*/
+/* MUSIC PLAYER */
+/*////////////////////////////*/
+
+.music-player {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  color: #000000;
+  background: white;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid black;
+  border-radius: 16px;
+  width: auto;
+  height: 300px;
+  padding: 30px 20px;
+  margin: 30px;
+}
+
+.music-player-2 {
+  display: flex;
+  gap: 50px;
+  align-items: flex-end;
+}
+
+.album-cover {
+  display: flex;
+}
+
+.album-cover img {
+  border-radius: 50%;
+  max-width: 320px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  transition: transform 0.5s ease-out;
+  pointer-events: none;
+  user-select: none;
+}
+
+.music-player h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 16px 0 2px;
+}
+
+.music-player p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 26px;
+  opacity: 0.8;
+}
+
+/* Music Player Controls */
+
+#progress {
+  display: none;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px; /* Dimensiones proporcionales */
+  margin: 20px;
+  background: white;
+  border: none;
+  color: black;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.controls button:is(:hover, :focus-visible) {
+  color: rgb(121, 121, 121);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1000px) {
+  .music-player {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .music-player-2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .album-cover img {
+    max-width: 200px; /* Reducir el tamaño de la imagen rotatoria */
+  }
+
+  .music-player h2,
+  .music-player p {
+    text-align: center; /* Centrar los textos */
+    margin: 10px 0;
+  }
+
+  /* Mantener los controles en una fila */
+  .controls {
+    flex-direction: row; /* Se mantiene en fila */
+    gap: 15px; /* Espacio entre los botones */
+  }
+
+  .controls button {
+    margin: 0;
+  }
+}
